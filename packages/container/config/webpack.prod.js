@@ -15,7 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        marketing: `marketing@${domain}/marketing/latest/main.js`,
+        marketing: 'https://mfe-assets-646.s3.us-east-2.amazonaws.com/marketing/latest/main.js',
       },
       shared: packageJson.dependencies,
     }),
